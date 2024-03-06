@@ -28,7 +28,7 @@ public class PoseSaveDialog extends DialogFragment {
         LayoutInflater inflater = requireActivity().getLayoutInflater();
 
         // XML dosyasını inflate et
-        View view = inflater.inflate(R.layout.pose_saver, null);
+        View view = inflater.inflate(R.layout.activity_main, null);
 
         // Inflate edilmiş XML düzenini dialoga ekle
         builder.setView(view);

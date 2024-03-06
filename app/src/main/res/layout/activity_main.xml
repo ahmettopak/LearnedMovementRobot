@@ -34,6 +34,8 @@
                     android:id="@+id/poseSaverTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Name" />
 
                 <EditText
@@ -58,6 +60,8 @@
                     android:id="@+id/turretTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Turret" />
 
                 <EditText
@@ -83,6 +87,8 @@
                     android:id="@+id/shoulderTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Shoulder" />
 
                 <EditText
@@ -108,6 +114,8 @@
                     android:id="@+id/elbowTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Elbow" />
 
                 <EditText
@@ -135,6 +143,8 @@
                     android:id="@+id/wristTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Wrist" />
 
                 <EditText
@@ -173,6 +183,8 @@
                     android:id="@+id/clampTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Clamp" />
 
                 <EditText
@@ -201,6 +213,8 @@
                     android:id="@+id/clampTurretTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Clamp Turret" />
 
                 <EditText
@@ -229,6 +243,8 @@
                     android:id="@+id/frontPalTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
+
                     android:text="Front Pal" />
 
                 <EditText
@@ -257,6 +273,7 @@
                     android:id="@+id/backPalTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BigTextStyle"
                     android:text="Back Pal" />
 
                 <EditText
@@ -267,6 +284,14 @@
                     android:hint="Back Pal Value"
                     android:inputType="number" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/savePositionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Save Position"/>
         </LinearLayout>
 
     </LinearLayout>

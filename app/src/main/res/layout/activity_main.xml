@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -18,8 +19,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.5">
+            android:layout_weight="0.5"
+            android:orientation="vertical">
             <!-- Name -->
             <LinearLayout
                 android:id="@+id/nameLayout"
@@ -32,9 +33,9 @@
 
                 <TextView
                     android:id="@+id/poseSaverTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Name" />
 
@@ -58,9 +59,9 @@
 
                 <TextView
                     android:id="@+id/turretTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Turret" />
 
@@ -85,9 +86,9 @@
 
                 <TextView
                     android:id="@+id/shoulderTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Shoulder" />
 
@@ -112,9 +113,9 @@
 
                 <TextView
                     android:id="@+id/elbowTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Elbow" />
 
@@ -141,9 +142,9 @@
 
                 <TextView
                     android:id="@+id/wristTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Wrist" />
 
@@ -156,14 +157,21 @@
                     android:inputType="number" />
             </LinearLayout>
 
+            <Button
+                android:id="@+id/deletePositionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Delete Position" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.5">
+            android:layout_weight="0.5"
+            android:orientation="vertical">
 
 
             <!-- Clamp -->
@@ -181,9 +189,9 @@
 
                 <TextView
                     android:id="@+id/clampTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Clamp" />
 
@@ -211,9 +219,9 @@
 
                 <TextView
                     android:id="@+id/clampTurretTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Clamp Turret" />
 
@@ -241,9 +249,9 @@
 
                 <TextView
                     android:id="@+id/frontPalTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
 
                     android:text="Front Pal" />
 
@@ -271,9 +279,9 @@
 
                 <TextView
                     android:id="@+id/backPalTextView"
+                    style="@style/BigTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/BigTextStyle"
                     android:text="Back Pal" />
 
                 <EditText
@@ -291,10 +299,25 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Save Position"/>
+                android:text="Save Position" />
+
+            <Button
+                android:id="@+id/updatePositionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Update Position" />
         </LinearLayout>
 
     </LinearLayout>
 
 
+    <com.ahmet.learnedmovementrobot.CustomListView
+        android:id="@+id/positionListView"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
